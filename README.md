@@ -1,7 +1,8 @@
 # U.S.-Housing-Affordability-Analysis
 Final Capstone Project - U.C. Berkeley Professional Certificate in Machine Learning and Artificial Intelligence
+Timothy Vermette
 
-## Project Overview
+## Project Overview and Problem Statement
 Housing affordability has become an increasingly important economic and social issue in the United States. Prospective homebuyers looking to achieve the “American Dream” are faced with increasing and often out-of-reach home prices, as well as navigating household income and broader economic conditions in the area where they live.
 
 The purpose of this project is to explore how housing affordability has changed across 100 major U.S. metropolitan areas between 2010 and 2024. Using data from Zillow and the U.S. Census Bureau, this analysis examines home values, median household income, population, and educational attainment in 2010, 2015, and 2024.
@@ -10,6 +11,8 @@ The goal is to identify which metropolitan areas have become more or less afford
 
 Housing affordability is measured using the **price-to-income ratio**, which compares typical home values with median household income. This provides a consistent measure for comparing affordability across metropolitan areas and examining how it has changed over time.
 
+The Primary question for this project is **How has housing affordability changed across major U.S. metropolitan areas between 2010 and 2024, and what economic and demographic factors are associated with differences in home values and affordability?**
+
 ## Link to Jupyter Notebook on GitHub
 https://github.com/t-vermette/U.S.-Housing-Affordability-Analysis/blob/main/Capstone%20Final.ipynb
 
@@ -17,12 +20,6 @@ https://github.com/t-vermette/U.S.-Housing-Affordability-Analysis/blob/main/Caps
 https://github.com/t-vermette/U.S.-Housing-Affordability-Analysis/blob/main/Capstone%20Data%20Prep.ipynb
 https://github.com/t-vermette/U.S.-Housing-Affordability-Analysis/blob/main/Capstone%20Dataset%20Exploration.ipynb
 https://github.com/t-vermette/U.S.-Housing-Affordability-Analysis/blob/main/Capstone_Project.ipynb
-
-## Problem Statement
-
-**How has housing affordability changed across major U.S. metropolitan areas between 2010 and 2024, and what economic and demographic factors are associated with differences in home values and affordability?**
-
-This analysis evaluates housing affordability primarily using home values relative to median household income, while population and educational attainment are explored as additional factors that may be associated with housing-market differences. Exploratory data analysis and multiple regression models are used to examine relationships among these variables, compare housing affordability across metropolitan areas and over time, and evaluate which factors are most strongly associated with affordability deterioration.
 
 ## Data Sources
 This project combines housing and demographic data from multiple sources:
