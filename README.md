@@ -13,6 +13,11 @@ Housing affordability is measured using the **price-to-income ratio**, which com
 ## Link to Jupyter Notebook on GitHub
 https://github.com/t-vermette/U.S.-Housing-Affordability-Analysis/blob/main/Capstone%20Final.ipynb
 
+## Links to Accompanying Jupyter Notebooks (Data Prep and EDA) on GitHub
+https://github.com/t-vermette/U.S.-Housing-Affordability-Analysis/blob/main/Capstone%20Data%20Prep.ipynb
+https://github.com/t-vermette/U.S.-Housing-Affordability-Analysis/blob/main/Capstone%20Dataset%20Exploration.ipynb
+https://github.com/t-vermette/U.S.-Housing-Affordability-Analysis/blob/main/Capstone_Project.ipynb
+
 ## Problem Statement
 
 **How has housing affordability changed across major U.S. metropolitan areas between 2010 and 2024, and what economic and demographic factors are associated with differences in home values and affordability?**
