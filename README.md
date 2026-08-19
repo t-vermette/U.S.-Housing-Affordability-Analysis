@@ -10,6 +10,9 @@ The goal is to identify which metropolitan areas have become more or less afford
 
 Housing affordability is measured using the **price-to-income ratio**, which compares typical home values with median household income. This provides a consistent measure for comparing affordability across metropolitan areas and examining how it has changed over time.
 
+## Link to Jupyter Notebook on GitHub
+https://github.com/t-vermette/U.S.-Housing-Affordability-Analysis/blob/main/Capstone%20Final.ipynb
+
 ## Problem Statement
 
 **How has housing affordability changed across major U.S. metropolitan areas between 2010 and 2024, and what economic and demographic factors are associated with differences in home values and affordability?**
