@@ -65,6 +65,7 @@ Model performance was compared using test-set RMSE and R², along with 5-fold cr
 | Ridge Regression | 21.46 | 0.31 | 24.97 |
 | Decision Tree | 22.20 | 0.27 | 28.99 |
 | Random Forest | **20.28** | **0.39** | 25.91 |
+
 Random Forest produced the strongest performance on the test set, with the lowest RMSE (20.28) and highest R² (0.39). However, Linear Regression produced the lowest cross-validation RMSE (24.23), suggesting more consistent performance across different subsets of the data.
 Overall, the more complex models did not provide a substantial improvement over the simpler Linear Regression baseline. Random Forest may capture some nonlinear relationships in the data, while Linear Regression demonstrated stronger consistency during cross-validation.
 Model interpretation also supported findings from the exploratory analysis. Population change emerged as the strongest feature associated with changes in affordability, followed by income change, while educational attainment showed a weaker relationship. The models explained some of the variation in affordability deterioration across the 100 metropolitan areas, but their relatively modest R² values suggest that additional economic and housing-market factors not included in this analysis also contribute to changes in affordability.
