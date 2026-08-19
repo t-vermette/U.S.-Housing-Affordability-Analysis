@@ -29,11 +29,12 @@ U.S. Census Bureau / ACS: https://www.census.gov
 Exploratory data analysis was conducted to examine housing affordability trends across the 100 metropolitan areas and identify differences between markets over time. The analysis focused on changes in home values, median household income, population, educational attainment, and the engineered price-to-income ratio.
 Between 2010 and 2024, the average price-to-income ratio across the metros examined increased from approximately 3.39 to 4.69, indicating an overall deterioration in housing affordability. However, the magnitude of this change varied considerably across metropolitan areas.
 Key areas explored included:
-Metros with the highest and lowest price-to-income ratios
-Metros experiencing the greatest deterioration in affordability
-Changes in home values and household income
-Population growth and decline
-Relationships between economic and demographic variables and affordability
+- Metros with the highest and lowest price-to-income ratios
+- Metros experiencing the greatest deterioration in affordability
+- Changes in home values and household income
+- Population growth and decline
+- Relationships between economic and demographic variables and affordability
+
 ## Data Preparation & Feature Engineering
 Data from Zillow and the U.S. Census Bureau required cleaning and standardization before the datasets could be combined. Metropolitan-area names were standardized across sources to allow Zillow housing data to be matched with Census income, population, and educational attainment data. The analysis was then limited to 100 major metropolitan areas with the necessary data available for comparison across the selected years.
 Several features were engineered to measure changes between 2010 and 2024, including:
