@@ -50,6 +50,7 @@ Several features were engineered to measure changes between 2010 and 2024, inclu
 - Percent change in home values
 - Price-to-income ratio, calculated by dividing typical home value by median household income
 - Affordability percent change, measuring the change in price-to-income ratio from 2010 to 2024
+  
 For modeling, AffordabilityPctChange was selected as the continuous target variable. Income percent change, population percent change, and change in educational attainment were used as predictor features. Home value percent change was excluded from the predictors because home values are already incorporated into the calculation of the price-to-income ratio.
 The modeling data was divided into 80% training data and 20% test data, using a random_state of 42. Cross-validation was also used during model evaluation and hyperparameter tuning.
 ## Machine Learning Approach
