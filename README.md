@@ -56,14 +56,16 @@ The modeling data was divided into 80% training data and 20% test data, using a 
 ## Machine Learning Approach
 This project uses supervised machine learning for a regression problem, as the target variable, AffordabilityPctChange, is continuous and measures the percent change in the price-to-income ratio from 2010 to 2024.
 Three predictor features were used to explore factors associated with changes in housing affordability:
-Percent change in median household income
-Percent change in population
-Change in college educational attainment
+- Percent change in median household income
+- Percent change in population
+- Change in college educational attainment
+  
 Four regression models were evaluated:
-Linear Regression — used as the baseline model and to examine the relationships between the predictors and affordability change.
-Ridge Regression — used to determine whether regularization could improve upon the baseline Linear Regression model.
-Decision Tree Regressor — used to explore potential nonlinear relationships and feature importance.
-Random Forest Regressor — used to determine whether combining multiple decision trees could improve predictive performance.
+- Linear Regression — used as the baseline model and to examine the relationships between the predictors and affordability change.
+- Ridge Regression — used to determine whether regularization could improve upon the baseline Linear Regression model.
+- Decision Tree Regressor — used to explore potential nonlinear relationships and feature importance.
+- Random Forest Regressor — used to determine whether combining multiple decision trees could improve predictive performance.
+  
 GridSearchCV with 5-fold cross-validation was used to tune the Ridge, Decision Tree, and Random Forest models. Model performance was evaluated using Root Mean Squared Error (RMSE) and R², with cross-validation also used to assess how consistently the models performed across different subsets of the data.
 ## Model Evaluation & Results
 Model performance was compared using test-set RMSE and R², along with 5-fold cross-validation RMSE to evaluate consistency across different subsets of the data.
