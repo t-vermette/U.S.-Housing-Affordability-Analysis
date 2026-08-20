@@ -42,7 +42,7 @@ Key areas explored included:
 - Relationships between these variables and affordability
 
 ## Data Preparation & Feature Engineering
-Data from Zillow and the U.S. Census Bureau required cleaning and standardization before the datasets could be combined. Metropolitan-area names were standardized across sources to allow Zillow housing data to be matched with Census income, population, and educational attainment data. The analysis was then limited to 100 major metropolitan areas with the necessary data available for comparison across the selected years.
+Data from Zillow and the U.S. Census Bureau required cleaning and standardization before the datasets could be combined. Metropolitan-area names were standardized across sources to allow Zillow housing data to be matched with Census income, population, and educational attainment data. The top 100 major metropolitan areas from Zillow's dataset were selected as our metros of focus.
 Several features were engineered to measure changes between 2010 and 2024, including:
 Percent change in median household income
 Percent change in population
