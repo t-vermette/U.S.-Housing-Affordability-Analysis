@@ -11,7 +11,7 @@ The goal is to identify which metropolitan areas have become more or less afford
 
 Housing affordability is measured using the **price-to-income ratio**, which compares typical home values with median household income. This provides a consistent measure for comparing affordability across metropolitan areas and examining how it has changed over time.
 
-The Primary question for this project is **How has housing affordability changed across major U.S. metropolitan areas between 2010 and 2024, and what economic and demographic factors are associated with differences in home values and affordability?**
+The primary question for this project is **How has housing affordability changed across major U.S. metropolitan areas between 2010 and 2024, and what economic and demographic factors are associated with differences in affordability?**
 
 ## Link to Jupyter Notebook on GitHub
 https://github.com/t-vermette/U.S.-Housing-Affordability-Analysis/blob/main/Capstone%20Final.ipynb
@@ -31,14 +31,14 @@ Zillow Research Data: https://www.zillow.com/research/data/
 U.S. Census Bureau / ACS: https://www.census.gov
 
 ## Exploratory Data Analysis
-Exploratory data analysis was conducted to examine housing affordability trends across the 100 metropolitan areas and identify differences between markets over time. The analysis focused on changes in home values, median household income, population, educational attainment, and the engineered price-to-income ratio.
-Between 2010 and 2024, the average price-to-income ratio across the metros examined increased from approximately 3.39 to 4.69, indicating an overall deterioration in housing affordability. However, the magnitude of this change varied considerably across metropolitan areas.
+Exploratory data analysis was conducted to examine housing affordability trends across the 100 metropolitan areas. Variables selected to analyze include home values, median household income, population, educational attainment, and the engineered price-to-income ratio.
+Between 2010 and 2024, the average price-to-income ratio across the metros examined increased from approximately 3.39 to 4.69, indicating an overall deterioration in housing affordability. However, the change in affordability was not uniform nationwide, and varied between metropolitan areas.
 Key areas explored included:
 - Metros with the highest and lowest price-to-income ratios
 - Metros experiencing the greatest deterioration in affordability
 - Changes in home values and household income
 - Population growth and decline
-- Relationships between economic and demographic variables and affordability
+- Relationships between these variables and affordability
 
 ## Data Preparation & Feature Engineering
 Data from Zillow and the U.S. Census Bureau required cleaning and standardization before the datasets could be combined. Metropolitan-area names were standardized across sources to allow Zillow housing data to be matched with Census income, population, and educational attainment data. The analysis was then limited to 100 major metropolitan areas with the necessary data available for comparison across the selected years.
@@ -49,8 +49,8 @@ Change in college educational attainment
 Percent change in home values
 Price-to-income ratio, calculated by dividing typical home value by median household income
 Affordability percent change, measuring the change in price-to-income ratio from 2010 to 2024
-For modeling, AffordabilityPctChange was selected as the continuous target variable. Income percent change, population percent change, and change in educational attainment were used as predictor features. Home value percent change was excluded from the predictors because home values are already incorporated into the calculation of the price-to-income ratio, which could introduce target leakage.
-The modeling data was divided into 80% training data and 20% test data, using a random_state of 42 for reproducibility. Cross-validation was also used during model evaluation and hyperparameter tuning.
+For modeling, AffordabilityPctChange was selected as the continuous target variable. Income percent change, population percent change, and change in educational attainment were used as predictor features. Home value percent change was excluded from the predictors because home values are already incorporated into the calculation of the price-to-income ratio.
+The modeling data was divided into 80% training data and 20% test data, using a random_state of 42. Cross-validation was also used during model evaluation and hyperparameter tuning.
 ## Machine Learning Approach
 This project uses supervised machine learning for a regression problem, as the target variable, AffordabilityPctChange, is continuous and measures the percent change in the price-to-income ratio from 2010 to 2024.
 Three predictor features were used to explore factors associated with changes in housing affordability:
@@ -58,7 +58,7 @@ Percent change in median household income
 Percent change in population
 Change in college educational attainment
 Four regression models were evaluated:
-Linear Regression — used as the baseline model and to examine the direction and magnitude of relationships between the predictors and affordability change.
+Linear Regression — used as the baseline model and to examine the relationships between the predictors and affordability change.
 Ridge Regression — used to determine whether regularization could improve upon the baseline Linear Regression model.
 Decision Tree Regressor — used to explore potential nonlinear relationships and feature importance.
 Random Forest Regressor — used to determine whether combining multiple decision trees could improve predictive performance.
@@ -72,9 +72,9 @@ Model performance was compared using test-set RMSE and R², along with 5-fold cr
 | Decision Tree | 22.20 | 0.27 | 28.99 |
 | Random Forest | **20.28** | **0.39** | 25.91 |
 
-Random Forest produced the strongest performance on the test set, with the lowest RMSE (20.28) and highest R² (0.39). However, Linear Regression produced the lowest cross-validation RMSE (24.23), suggesting more consistent performance across different subsets of the data.
+Random Forest produced the strongest performance on the test set, with the lowest RMSE (20.28) and highest R² (0.39). However, Linear Regression produced the lowest cross-validation RMSE (24.23).
 Overall, the more complex models did not provide a substantial improvement over the simpler Linear Regression baseline. Random Forest may capture some nonlinear relationships in the data, while Linear Regression demonstrated stronger consistency during cross-validation.
-Model interpretation also supported findings from the exploratory analysis. Population change emerged as the strongest feature associated with changes in affordability, followed by income change, while educational attainment showed a weaker relationship. The models explained some of the variation in affordability deterioration across the 100 metropolitan areas, but their relatively modest R² values suggest that additional economic and housing-market factors not included in this analysis also contribute to changes in affordability.
+Model interpretation also supported findings from the exploratory analysis. Population change emerged as the strongest feature associated with changes in affordability, followed by income change, while educational attainment showed a weaker relationship. The models explained some of the variation in affordability deterioration across the 100 metropolitan areas, but their relatively modest R² values suggest that additional economic factors, not included in this analysis, likely contribute to changes in affordability as well.
 
 ## Key Findings
 Housing affordability across the top 100 U.S. metros examined has changed considerably over the last 15 years. Based on the affordability feature engineered for this project, "price-to-income ratio," which divides typical home values by median household income, we have found that on average, this ratio increased from approximately 3.39 in 2010 to 3.92 in 2015 and 4.69 in 2024. The data also showed that this increase varied widely across metros and regions. In fact, there were 2 metros, New Orleans, LA, and Baton Rouge, LA, that experienced an improvement in affordability. All other metros examined experienced a deterioration in affordability.
